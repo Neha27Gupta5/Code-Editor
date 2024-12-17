@@ -1,5 +1,5 @@
 # Code-Editor-for-HTML-CSS-and-Javascript
-This project involves creating a basic in-browser code editor using HTML, CSS, and JavaScript. The editor allows users to write, edit, and preview HTML, CSS, and JavaScript code directly in the browser, making it an educational tool for learning and experimenting with web development.
+This project involves creating a basic in-browser code editor using HTML, CSS, and JavaScript. The editor allows users to write, edit, copy , download and preview HTML, CSS, and JavaScript code directly in the browser, making it an educational tool for learning and experimenting with web development.
 
 Key Features:
 
