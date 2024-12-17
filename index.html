@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="code-editor-container">
+        <div class="code-editor html-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="html.png" alt="" width="25px">
+                    <span>HTML</span>
+                </div>
+                <div class="right-head">
+                    <button class="copy-btn" onclick="copyToClipboard('.html-input')">Copy</button>
+                    <button class="download-btn" onclick="downloadCode('.html-input', 'index.html')">Download</button>
+                </div>
+            </div>
+            <textarea class="html-input" spellcheck="false" placeholder="Write your HTML code here..."></textarea>
+        </div>
+        <div class="code-editor css-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="css.png" alt="" width="30px">
+                    <span>CSS</span>
+                </div>
+                <div class="right-head">
+                    <button class="copy-btn" onclick="copyToClipboard('.css-input')">Copy</button>
+                    <button class="download-btn" onclick="downloadCode('.css-input', 'style.css')">Download</button>
+                </div>
+            </div>
+            <textarea class="css-input" spellcheck="false" placeholder="Write your CSS code here..."></textarea>
+        </div>
+        <div class="code-editor js-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="js.png" alt="" width="30px">
+                    <span>JS</span>
+                </div>
+                <div class="right-head">
+                    <button class="copy-btn" onclick="copyToClipboard('.js-input')">Copy</button>
+                    <button class="download-btn" onclick="downloadCode('.js-input', 'script.js')">Download</button>
+                </div>
+            </div>
+            <textarea class="js-input" spellcheck="false" placeholder="Write your Js code here..."></textarea>
+        </div>
+    </div>
+    <div class="output-container">
+        <div class="output-head">
+            <span>OUTPUT</span>
+        </div>
+        <iframe id="output"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
